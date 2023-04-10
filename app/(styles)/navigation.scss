@@ -1,0 +1,58 @@
+
+
+.navigationContainer {
+    width: 92%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+
+
+    .leftLinks {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        // background: blue;
+
+        span {
+            font-weight: 300;
+            cursor: pointer;
+        }
+    }
+
+    .logo {
+        width: 40%;
+        text-align: center;
+        font-family: 'Luckiest Guy';
+        font-size: 35px;
+        // background: green;
+    }
+
+    .rightLinks {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center !important;
+        justify-content: flex-end;
+        gap: 20px;
+        .podcastbanner {
+            width: 150px;
+            height: 50%;
+            cursor: pointer;
+        }
+
+        .applePodcast {
+            background: url('../\(assets\)/applebanner.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .spotifyPodcast {
+            background: url('../\(assets\)/spotifybanner.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+    }
+}

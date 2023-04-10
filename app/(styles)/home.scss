@@ -1,0 +1,260 @@
+.mainContainer {
+    width: 92%;
+    height: 50vh;
+    background: url('../\(assets\)/podcastmic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;padding-left: 90px;
+    position: relative;
+    // padding: 20px;
+
+    .showcaseInner{
+    h1 {
+        color: #26545e;
+        font-size: 60px;
+        // padding-left: 20px;
+    }
+
+    .showCaseButtons {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        // background: blue;
+        margin-top: 20px;
+        // padding-left: 20px;
+
+        button {
+            cursor: pointer;
+            background: white;
+            width: 150px;
+            height: 40px;
+            border-radius: 9px;
+            border: 1px solid #ccc;
+            // color: #fff;
+        }
+    }
+
+
+}
+
+.latestEpisode {
+    width: 90%;
+    background-color: #ffffff;
+    height: 150px;
+    position: absolute;
+    bottom: -190px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .podcastArt {
+        width: 9.4%;
+        height: 100%;
+        background: url('../\(assets\)/podcastArt.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .podcastDetails {
+        width: 25%;
+        height: 100%;
+        padding-top: 20px;
+        // background-color: green;
+        .epNo {
+            display: block;
+            color: #9b9b9b;
+            margin-bottom: 10px;
+        }
+
+        .epTitle {
+            font-size: 25px;
+            color: var(--main-color);
+            font-weight: bold;
+        }
+
+        .epHostGuest {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+
+        }
+    }
+
+    .podcastPlayer {
+        width: 60%;
+        height: 100%;
+        // background-color: red;
+
+        audio {
+            display: none;
+        }
+
+        .controls {
+            height: 100%;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 10px;
+
+            .rewind, .play-pause, .forward {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: white;
+                box-shadow: 0 0 50px #ccc;
+                cursor: pointer;
+                border: 1px #ccc solid;
+            }
+
+            .progress {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            input[type="range"] {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 8px;
+                background-color: #ccc;
+                outline: none;
+              }
+              
+              input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 6px;
+                height: 16px;
+                background-color: #fff;
+                // border-radius: 50%;
+                cursor: pointer;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+              }
+
+              }
+              
+
+
+        }
+    }
+
+
+}
+.featuredEpisode {
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 150px;
+
+    .episodesTopBar {
+        width: 91%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    h1 {
+        // padding-left: 90px;
+        margin-bottom: 20px;
+    }
+
+    .searchEpisode {
+        width: 15%;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #e1dddd;
+        padding: 5px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+        input {
+            width: 90%;
+            height: 100%;
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .searchIcon {
+        cursor: pointer;
+    }
+    // background: red !important;
+
+    .episodeCard {
+        width: 89%;
+        margin: 0 auto;
+        height: 120px;
+        background: #ffffff;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        margin-bottom: 25px;
+
+        .episodeArt {
+            width: 100px;
+            height: 100%;
+            background: url('../\(assets\)/podcastArt.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .episodeDetails {
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            .episodeNumber {
+                padding: 5px 0px;
+                font-size: 13px;
+                color: #6d6d6d;
+            }
+
+            .episodeTitle {
+                width: 450px;
+                font-size: 25px;
+                padding: 5px 0px;
+            }
+
+            .episodeDate {
+                color: #6d6d6d;
+                font-size: 13px;
+                padding: 5px 0px;
+            }
+
+            .hostGuest {
+                font-size: 15px;
+            }
+
+
+        }
+
+        .playButton {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
