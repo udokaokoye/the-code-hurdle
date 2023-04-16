@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useAppContex } from '../contex/store'
+import { useAppContex } from '../(contex)/store.js'
 
 function Navigation() {
   const {demo, setdemo, side, setside} = useAppContex()
@@ -8,11 +8,12 @@ function Navigation() {
   return (
     <div className="navigationContainer">
       <div className="leftLinks">
-        <span>Home</span>
-        <span>Library</span>
+        <span className='active'>Home</span>
+        <span>Episodes</span>
         <span>Subscribe</span>
         <span>About</span>
-        <span>Be a guest</span>
+        <span>Contact</span>
+        <span>Blog</span>
       </div>
       <div className="logo">
         The Code Hurdle Podcast

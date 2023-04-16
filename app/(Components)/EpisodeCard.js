@@ -3,6 +3,7 @@ import { faBackward, faForward, faLongArrowAltRight, faPlay } from "@fortawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function EpisodeCard() {
+  
   return (
     <div className='episodeCard'>
       <div className="episodeArt"></div>

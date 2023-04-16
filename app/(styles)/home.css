@@ -1,211 +1,227 @@
-.mainContainer {
-  width: 92%;
-  height: 50vh;
-  background: url("../(assets)/podcastmic.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.showcaseContainer {
+  width: var(--standard-width);
   margin: 0 auto;
+  height: 90vh;
+  color: var(--textColor);
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding-left: 90px;
-  position: relative;
-}
-.mainContainer .showcaseInner h1 {
-  color: #26545e;
-  font-size: 60px;
-}
-.mainContainer .showcaseInner .showCaseButtons {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.mainContainer .showcaseInner .showCaseButtons button {
-  cursor: pointer;
-  background: white;
-  width: 150px;
-  height: 40px;
-  border-radius: 9px;
-  border: 1px solid #ccc;
-}
-.mainContainer .latestEpisode {
-  width: 90%;
-  background-color: #ffffff;
-  height: 150px;
-  position: absolute;
-  bottom: -190px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.mainContainer .latestEpisode .podcastArt {
-  width: 9.4%;
-  height: 100%;
-  background: url("../(assets)/podcastArt.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.showcaseContainer .showcaseLatestEpisode {
+  width: 55%;
+  height: 70%;
+  padding-top: 50px;
 }
-.mainContainer .latestEpisode .podcastDetails {
-  width: 25%;
-  height: 100%;
-  padding-top: 20px;
-}
-.mainContainer .latestEpisode .podcastDetails .epNo {
-  display: block;
-  color: #9b9b9b;
-  margin-bottom: 10px;
-}
-.mainContainer .latestEpisode .podcastDetails .epTitle {
-  font-size: 25px;
+.showcaseContainer .showcaseLatestEpisode .latestEpisodeNumber {
   color: var(--main-color);
   font-weight: bold;
+  font-family: "Nunito Sans";
+  font-size: 40px;
 }
-.mainContainer .latestEpisode .podcastDetails .epHostGuest {
-  display: flex;
-  gap: 10px;
+.showcaseContainer .showcaseLatestEpisode .latestEpisodeTitle {
+  width: 90%;
+  font-size: 60px;
+  font-weight: 900;
+  font-family: "Nunito Sans";
   margin-top: 10px;
+  margin-bottom: 10px;
 }
-.mainContainer .latestEpisode .podcastPlayer {
-  width: 60%;
-  height: 100%;
+.showcaseContainer .showcaseLatestEpisode .latestEpisodeDescription {
+  color: #ccc;
 }
-.mainContainer .latestEpisode .podcastPlayer audio {
-  display: none;
+.showcaseContainer .showcaseLatestEpisode .latestEpisodeDescription span {
+  color: var(--main-color);
+  font-weight: bold;
+  cursor: pointer;
 }
-.mainContainer .latestEpisode .podcastPlayer .controls {
-  height: 100%;
+.showcaseContainer .showcaseLatestEpisode .episodeDate {
+  color: #ccc;
+  font-size: 12px;
+  margin: 20px 0px;
+}
+.showcaseContainer .showcaseLatestEpisode .episodeDate .calendarIcon {
+  color: var(--main-color);
+}
+.showcaseContainer .showcaseLatestEpisode .playLatestEpisodeButton {
   display: flex;
-  gap: 20px;
   align-items: center;
-  padding: 10px;
+  gap: 15px;
+  margin: 15px 0px;
+  cursor: pointer;
+  font-weight: bold;
 }
-.mainContainer .latestEpisode .podcastPlayer .controls .rewind, .mainContainer .latestEpisode .podcastPlayer .controls .play-pause, .mainContainer .latestEpisode .podcastPlayer .controls .forward {
-  width: 30px;
-  height: 30px;
+.showcaseContainer .showcaseLatestEpisode .playLatestEpisodeButton .playIconContainer {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  border: 2px solid #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
-  box-shadow: 0 0 50px #ccc;
   cursor: pointer;
-  border: 1px #ccc solid;
 }
-.mainContainer .latestEpisode .podcastPlayer .controls .progress {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.showcaseContainer .showcaseLatestEpisode .playLatestEpisodeButton .playIconContainer .playIcon {
+  font-size: 18px;
+  color: var(--main-color);
 }
-.mainContainer .latestEpisode .podcastPlayer .controls input[type=range] {
-  -webkit-appearance: none;
+.showcaseContainer .showcaseLatestEpisode .showcaseButtons {
   width: 100%;
-  height: 8px;
-  background-color: #ccc;
-  outline: none;
-}
-.mainContainer .latestEpisode .podcastPlayer .controls input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 6px;
-  height: 16px;
-  background-color: #fff;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.featuredEpisode {
-  width: 96%;
-  margin: 0 auto;
-  margin-top: 150px;
-}
-.featuredEpisode .episodesTopBar {
-  width: 91%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.featuredEpisode h1 {
-  margin-bottom: 20px;
-}
-.featuredEpisode .searchEpisode {
-  width: 15%;
-  height: 40px;
-  border-radius: 12px;
   display: flex;
   align-items: center;
-  border: 1px solid #e1dddd;
-  padding: 5px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  gap: 50px;
+  margin-top: 60px;
 }
-.featuredEpisode .searchEpisode input {
-  width: 90%;
-  height: 100%;
+.showcaseContainer .showcaseLatestEpisode .showcaseButtons button {
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+}
+.showcaseContainer .showcaseLatestEpisode .showcaseButtons .allEpisodesButton {
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
   border: none;
-}
-.featuredEpisode .searchEpisode input:focus {
-  outline: none;
-}
-.featuredEpisode .searchIcon {
   cursor: pointer;
 }
-.featuredEpisode .episodeCard {
-  width: 89%;
-  margin: 0 auto;
-  height: 120px;
-  background: #ffffff;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 25px;
+.showcaseContainer .showcaseLatestEpisode .showcaseButtons .listenNow {
+  background-color: #fff;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid white;
+  cursor: pointer;
 }
-.featuredEpisode .episodeCard .episodeArt {
-  width: 100px;
-  height: 100%;
-  background: url("../(assets)/podcastArt.png");
-  background-size: contain;
-  background-position: center;
+.showcaseContainer .showcaseImage {
+  width: 35%;
+  height: 80%;
+  background: url("../(assets)/banner.jpg");
+  background-position: top left;
+  background-size: 160%;
   background-repeat: no-repeat;
 }
-.featuredEpisode .episodeCard .episodeDetails {
-  margin-left: 10px;
+
+.featuredEpisodeContainer {
+  width: var(--standard-width);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.featuredEpisodeContainer h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--textColor);
+}
+.featuredEpisodeContainer h2 {
+  color: var(--main-color);
+  text-align: center;
+  margin-top: 15px;
+}
+.featuredEpisodeContainer .featuredEpisodeList {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+.featuredEpisodeContainer .featuredEpisodeList .featuredEpisode {
+  width: 20%;
+  height: auto;
+  background: #030303;
+  border: 1px solid #2b2b2b;
+  color: var(--textColor);
+  padding: 15px;
+  box-shadow: 0 0 10px var(--main-color);
+}
+.featuredEpisodeContainer .featuredEpisodeList .featuredEpisode .featuredEpisodeNumber {
+  font-family: "Anton";
+  font-size: 55px;
+}
+.featuredEpisodeContainer .featuredEpisodeList .featuredEpisode .featuredEpisodeNumber span {
+  font-family: "Anton";
+  color: var(--main-color);
+}
+.featuredEpisodeContainer .featuredEpisodeList .featuredEpisode .featuredTitle {
+  font-size: 35px;
+}
+.featuredEpisodeContainer .featuredEpisodeList .featuredEpisode .featuredDateandDuration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  font-size: 13px;
+  color: #9b9b9b;
+}
+.featuredEpisodeContainer .featuredEpisodeList .featuredEpisode .featuredEpisodeDescription {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #dbdada;
+}
+.featuredEpisodeContainer .featuredEpisodeList .featuredEpisode .featuredEpisodePlayButton {
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 30px;
+  background: var(--main-color);
+  color: var(--textColor);
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribeContainer {
+  color: var(--textColor);
+}
+.subscribeContainer h1 {
+  text-align: center;
+  font-size: 50px;
+}
+.subscribeContainer h2 {
+  text-align: center;
+  color: var(--main-color);
+}
+.subscribeContainer .subscribeForm {
+  width: 30%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-.featuredEpisode .episodeCard .episodeDetails .episodeNumber {
-  padding: 5px 0px;
-  font-size: 13px;
-  color: #6d6d6d;
-}
-.featuredEpisode .episodeCard .episodeDetails .episodeTitle {
-  width: 450px;
-  font-size: 25px;
-  padding: 5px 0px;
-}
-.featuredEpisode .episodeCard .episodeDetails .episodeDate {
-  color: #6d6d6d;
-  font-size: 13px;
-  padding: 5px 0px;
-}
-.featuredEpisode .episodeCard .episodeDetails .hostGuest {
-  font-size: 15px;
-}
-.featuredEpisode .episodeCard .playButton {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  cursor: pointer;
+  margin-top: 50px;
+}
+.subscribeContainer .subscribeForm input {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: var(--textColor);
+  font-weight: bold;
+}
+.subscribeContainer .subscribeForm input::-moz-placeholder {
+  color: var(--textColor);
+  font-weight: bold;
+}
+.subscribeContainer .subscribeForm input::placeholder {
+  color: var(--textColor);
+  font-weight: bold;
+}
+.subscribeContainer .subscribeForm input:focus {
+  outline: none;
+}
+.subscribeContainer .subscribeForm button {
+  height: 60px;
+  margin-top: 30px;
+  background-color: var(--main-color);
+  color: var(--textColor);
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+}
+
+.footerContainer {
+  width: 100%;
+  height: 300px;
+  background: #ccc;
 }/*# sourceMappingURL=home.css.map */

@@ -2,7 +2,7 @@ import Navigation from '@/app/(Components)/Navigation'
 import './globals.css'
 import '@/app/(styles)/navigation.css'
 import '@/app/(styles)/home.css'
-import { AppContexProvider } from './contex/store'
+import { AppContexProvider } from './(contex)/store'
 
 export const metadata = {
   title: 'The Code Hurdle Podcast',

@@ -1,41 +1,55 @@
 
 
 .navigationContainer {
-    width: 92%;
+    width: var(--standard-width);
     height: 10vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center !important;
+    color: var(--textColor);
 
 
     .leftLinks {
-        width: 30%;
+        width: 35%;
         display: flex;
         justify-content: space-between;
         // background: blue;
 
         span {
-            font-weight: 300;
+            font-weight: 400;
             cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            // add a hover effect
+            &:hover {
+                color: var(--main-color);
+            }
+        }
+
+        .active {
+            font-weight: 600;
+            color: var(--main-color);
         }
     }
 
     .logo {
         width: 40%;
         text-align: center;
-        font-family: 'Luckiest Guy';
+        font-family: 'Roboto';
+        font-weight: 900;
         font-size: 35px;
+        color: var(--text-color);
         // background: green;
     }
 
     .rightLinks {
-        width: 30%;
+        width: 35%;
         height: 100%;
         display: flex;
         align-items: center !important;
         justify-content: flex-end;
-        gap: 20px;
+        gap: 80px;
         .podcastbanner {
             width: 150px;
             height: 50%;
