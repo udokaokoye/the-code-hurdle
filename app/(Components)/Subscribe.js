@@ -5,7 +5,7 @@ function Subscribe() {
   return (
     <div className="subscribeContainer">
       <h1>Subscribe</h1>
-      <h2>
+      <h2 className="subscribeMessage">
         Subscribe to our podcast and get the latest episodes delivered to your
         inbox.
       </h2>

@@ -149,7 +149,7 @@ justify-content: center;
       border: 1px solid #2b2b2b;
       color: var(--textColor);
       padding: 15px;
-      box-shadow: 0 0 10px var(--main-color);
+      // box-shadow: 0 0 10px var(--main-color);
 
       .featuredEpisodeNumber {
         font-family: 'Anton';
@@ -206,9 +206,10 @@ justify-content: center;
     font-size: 50px;
   }
   h2 {
+    font-size: 18px;
     text-align: center;
     color: var(--main-color);
-  }
+  } 
 
   .subscribeForm {
     width: 30%;
@@ -219,10 +220,11 @@ justify-content: center;
     justify-content: center;
     margin-top: 50px;
 
+
     input{
       width: 100%;
       height: 50px;
-      border-radius: 20px;
+      border-radius: 25px;
       padding: 10px;
       border: 2px solid white;
       background-color: transparent;
@@ -254,5 +256,56 @@ justify-content: center;
 .footerContainer {
   width: 100%;
   height: 300px;
-  background: #ccc;
+  background: var(--blk);
+  display: flex;
+    justify-content: space-evenly;
+  color: var(--textColor);
+  margin-top: 100px;
+  border-top: 1px solid #272727;
+  padding-top: 20px;
+  .footerAbout {
+    width: 30%;
+    // background: ;
+  }
+  .footerRecentEpisode{
+    display: flex;
+    flex-direction: column;
+
+    span {
+      margin-bottom: 20px;
+      color: var(--main-color);
+      font-weight: bold;
+    }
+  }
+
+  .footerContact {
+
+
+    .footerIcons {
+      color: var(--main-color);
+    }
+
+    .footerLocation {
+      margin: 10px 0px;
+    }
+    .footerLinks{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+      margin-bottom: 10px;
+
+    }
+
+    .contactButton_footer {
+      width: 100%;
+      height: 40px;
+      background: var(--main-color);
+      border-radius: 15px;
+      border: 1px solid transparent;
+      color: var(--textColor);
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
 }

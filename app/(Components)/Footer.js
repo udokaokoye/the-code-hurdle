@@ -1,4 +1,7 @@
 'use client'
+// import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+// import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 function Footer() {
@@ -18,10 +21,13 @@ function Footer() {
         </div>
         <div className="footerContact">
             <h1>Contact</h1>
-            <button>Contact Us</button>
+            {/* <div className="footerLocation"><FontAwesomeIcon className='footerIcons' icon={faMapMarkerAlt} /> Cincinnati Ohio</div> */}
             <div className="footerLinks">
-                {/* !SOCIAL MEDIA LINKS */}
+                {/* <FontAwesomeIcon className='footerIcons' icon={faInstagram} /> */}
+                {/* <FontAwesomeIcon className='footerIcons' icon={faTwitter} /> */}
+                {/* <FontAwesomeIcon className='footerIcons' icon={faEnvelope} /> */}
             </div>
+            <button className='contactButton_footer'>Contact Us</button>
         </div>
     </div>
   )

@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
-import EpisodeCard from './EpisodeCard'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay, faSearch } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 function FeaturedEpisode() {
   return (
@@ -16,7 +15,7 @@ function FeaturedEpisode() {
             <h3 className='featuredTitle'>BootCamp: Discussing The Challenges Of A BootCamp With Jane Doe.</h3>
             <div className="featuredDateandDuration"><span>April 22nd 2023</span> <span>20:25:10</span></div>
             <p className="featuredEpisodeDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,  </p>
-            <button className="featuredEpisodePlayButton"><FontAwesomeIcon icon={faPlay} /> Play Now</button>
+            {/* <button className="featuredEpisodePlayButton"><FontAwesomeIcon icon={faPlay} /> Play Now</button> */}
           </div>
 
           <div className="featuredEpisode">
@@ -24,7 +23,7 @@ function FeaturedEpisode() {
             <h3 className='featuredTitle'>BootCamp: Discussing The Challenges Of A BootCamp With Jane Doe.</h3>
             <div className="featuredDateandDuration"><span>April 22nd 2023</span> <span>20:25:10</span></div>
             <p className="featuredEpisodeDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,  </p>
-            <button className="featuredEpisodePlayButton"><FontAwesomeIcon icon={faPlay} /> Play Now</button>
+            {/* <button className="featuredEpisodePlayButton"><FontAwesomeIcon icon={faPlay} /> Play Now</button> */}
           </div>
 
           <div className="featuredEpisode">
@@ -32,7 +31,7 @@ function FeaturedEpisode() {
             <h3 className='featuredTitle'>BootCamp: Discussing The Challenges Of A BootCamp With Jane Doe.</h3>
             <div className="featuredDateandDuration"><span>April 22nd 2023</span> <span>20:25:10</span></div>
             <p className="featuredEpisodeDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,  </p>
-            <button className="featuredEpisodePlayButton"><FontAwesomeIcon icon={faPlay} /> Play Now</button>
+            {/* <button className="featuredEpisodePlayButton"><FontAwesomeIcon icon={faPlay} /> Play Now</button> */}
           </div>
         </div>
         <br /><br /><br /><br /><br />

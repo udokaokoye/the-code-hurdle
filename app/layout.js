@@ -1,8 +1,7 @@
 import Navigation from '@/app/(Components)/Navigation'
 import './globals.css'
-import '@/app/(styles)/navigation.css'
-import '@/app/(styles)/home.css'
-import { AppContexProvider } from './(contex)/store'
+
+// import { AppContexProvider } from './(contex)/Store'
 
 export const metadata = {
   title: 'The Code Hurdle Podcast',
@@ -13,10 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <AppContexProvider>
+        {/* <AppContexProvider> */}
           <Navigation />
         {children}
-        </AppContexProvider>
+        {/* </AppContexProvider> */}
         </body>
     </html>
   )

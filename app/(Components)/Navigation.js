@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useAppContex } from '../(contex)/store.js'
+import { useAppContex } from '../(contex)/Store.js'
 
 function Navigation() {
   const {demo, setdemo, side, setside} = useAppContex()
